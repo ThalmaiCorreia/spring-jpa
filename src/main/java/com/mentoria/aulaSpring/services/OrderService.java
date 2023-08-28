@@ -2,6 +2,7 @@ package com.mentoria.aulaSpring.services;
 
 import com.mentoria.aulaSpring.entities.Order;
 import com.mentoria.aulaSpring.repositories.OrderRepository;
+import com.mentoria.aulaSpring.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class OrderService {
 
     public Order findById(Long id){
         Optional<Order> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(()-> new ResourceNotFoundException(id));
     }
 
 }

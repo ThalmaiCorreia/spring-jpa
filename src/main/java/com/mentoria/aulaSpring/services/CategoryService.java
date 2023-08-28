@@ -2,6 +2,7 @@ package com.mentoria.aulaSpring.services;
 
 import com.mentoria.aulaSpring.entities.Category;
 import com.mentoria.aulaSpring.repositories.CategoryRepository;
+import com.mentoria.aulaSpring.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class CategoryService {
 
     public Category findById(Long id){
         Optional<Category> obj = repository.findById(id);
-        return obj.get();
+        return obj.orElseThrow(()-> new ResourceNotFoundException(id));
     }
 
 }

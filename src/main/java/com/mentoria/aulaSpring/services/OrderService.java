@@ -1,9 +1,7 @@
-package com.mentoria.aulaSpring.servicies;
+package com.mentoria.aulaSpring.services;
 
 import com.mentoria.aulaSpring.entities.Order;
-import com.mentoria.aulaSpring.entities.User;
 import com.mentoria.aulaSpring.repositories.OrderRepository;
-import com.mentoria.aulaSpring.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

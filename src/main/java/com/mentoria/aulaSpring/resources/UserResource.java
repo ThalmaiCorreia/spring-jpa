@@ -1,7 +1,7 @@
 package com.mentoria.aulaSpring.resources;
 
 import com.mentoria.aulaSpring.entities.User;
-import com.mentoria.aulaSpring.servicies.UserService;
+import com.mentoria.aulaSpring.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

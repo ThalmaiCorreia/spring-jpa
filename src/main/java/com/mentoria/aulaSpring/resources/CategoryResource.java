@@ -1,7 +1,7 @@
 package com.mentoria.aulaSpring.resources;
 
 import com.mentoria.aulaSpring.entities.Category;
-import com.mentoria.aulaSpring.servicies.CategoryService;
+import com.mentoria.aulaSpring.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

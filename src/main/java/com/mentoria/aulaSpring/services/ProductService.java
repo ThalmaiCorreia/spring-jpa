@@ -1,4 +1,4 @@
-package com.mentoria.aulaSpring.servicies;
+package com.mentoria.aulaSpring.services;
 
 import com.mentoria.aulaSpring.entities.Product;
 import com.mentoria.aulaSpring.repositories.ProductRepository;
